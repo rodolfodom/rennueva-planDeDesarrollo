@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link  type="text/css" rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
     <title>Plan de manejo</title>
 </head>
+
 <body style="background-image: url('./img/background.png'); background-repeat: repeat; background-size: 100%;">
-    <header class="bg-blue p-4 h-20 fixed top-0 shadow-xl w-screen">
+    <header class="bg-blue p-4 h-20 fixed top-0 shadow-xl w-screen z-10">
         <nav class="container mx-auto h-full flex flex-row flex-shrink justify-between">
             <a href="https://rennueva.com/rennueva/" class="h-full">
                 <img src="./img/RennuevaLogo.png" alt="logo-rennueva" class="h-full">
             </a>
             <div class="h-full p-1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-full">
-                    <path fill-rule="evenodd" d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z" clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+                        clip-rule="evenodd" />
                 </svg>
             </div>
         </nav>
     </header>
-    <main class="mt-20">
-        <section class="h-[calc(100vh-80px)] p-5 flex flex-col justify-center gap-5" style="background:linear-gradient(0deg, rgba(245, 245, 245, 0.60) 0%, rgba(245, 245, 245, 0.70) 100%), url('./img/heroImg.png'); background-size: cover; background-position: 50%;">
+    <main class="mt-20 w-full">
+        <section class="h-[calc(100vh-80px)] p-5 flex flex-col justify-center gap-5"
+            style="background:linear-gradient(0deg, rgba(245, 245, 245, 0.60) 0%, rgba(245, 245, 245, 0.70) 100%), url('./img/heroImg.png'); background-size: cover; background-position: 50%;">
             <div>
                 <h2 class="font-title font-semibold text-xl text-center mb-4">¡Bienvenido!</h2>
-                <p class="text-base font-body text-justify">Gracias por tu asistencia a esta presentación del Plan de Manejo de Residuos Posconsumo para la Ciudad de México.</p>
+                <p class="text-base font-body text-justify">Gracias por tu asistencia a esta presentación del Plan de
+                    Manejo de Residuos Posconsumo para la Ciudad de México.</p>
             </div>
-            <button class="bg-green-100 p-4 rounded-lg font-title font-semibold shadow-2xl">Descarga la presentación</button>
+            <button class="bg-green-100 p-4 rounded-lg font-title font-semibold shadow-2xl">Descarga la
+                presentación</button>
         </section>
-        <section class="pt-7 px-4">
+        <section class="pt-7 px-4 w-full">
             <h2 class="font-title font-bold text-center text-xl">Agenda</h2>
-            <table class="table-auto" style='';>
+            <table class="table-auto border-collapse w-full relative z-0 " ; id="agenda">
                 <thead class="font-body font-normal text-center bg-green-400">
-                        <th class="px-4 pt-4 pb-4 rounded-tl-lg =">Contenido</th>
-                        <th class="px-4 pt-4 pb-4 rounded-tr-lg">Tiempo</th> 
+                    <tr>
+                        <th class="px-4 pt-4 pb-4 rounded-tl-lg">Contenido</th>
+                        <th class="px-4 pt-4 pb-4 rounded-tr-lg">Tiempo</th>
                     </tr>
                 </thead>
                 <tbody class="font-body font-light bg-white-200 text-center">
@@ -56,21 +66,213 @@
                         <td class="px-4 pt-4 pb-2">5 min</td>
                     </tr>
                     <tr>
-                        <td class="px-4 pt-2 pb-2">Presentación del programa de regulación y actualización ambiental (Rennueva)</td>
+                        <td class="px-4 pt-2 pb-2">Presentación del programa de regulación y actualización ambiental
+                            (Rennueva)</td>
                         <td class="px-4 pt-4 pb-2">5 min</td>
                     </tr>
                     <tr>
-                        <td class="px-4 pt-2 pb-2">Importancia de un plan de manejo postconsumo para la CDMX (SEDEMA)</td>
+                        <td class="px-4 pt-2 pb-2">Importancia de un plan de manejo postconsumo para la CDMX (SEDEMA)
+                        </td>
                         <td class="px-4 pt-4 pb-2">30 min</td>
                     </tr>
                     <tr>
                         <td class="px-4 pt-2 pb-4">Cierre</td>
-                        <td class="px-4 pt-4 pb-4">30 min</td>
+                        <td class="px-4 pt-4 pb-4">5 min</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+        <section class="mt-7 p-5 flex flex-col gap-4" style="background: rgba(162, 204, 2, 0.50);">
+            <div>
+                <h2 class="font-title font-bold text-center text-xl">¿Tienes preguntas?</h2>
+                <p class="text-base font-body text-justify">Participa en vivo y envía tus preguntas a través de Vevox.
+                </p>
+            </div>
+            <a href="https://vevox.app/#/m/175900237" target="_blank" rel="noopener" class="bg-blue p-4 rounded-lg font-title font-semibold shadow-2xl text-white-200 text-center">únete a la
+                conversación</a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="223" viewBox="0 0 189 223" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M130.115 26.6279C133.073 23.1566 135.074 18.9025 134.74 14.1356C133.776 0.401 114.657 3.42244 110.938 10.3545C107.219 17.2866 107.661 34.8703 112.467 36.1093C114.384 36.6034 118.468 35.393 122.624 32.888L120.015 51.3432H135.418L130.115 26.6279Z"
+                    fill="#915B3C" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M131.299 29.7197C133.232 21.1191 138.74 15.2563 137.898 11.4121C137.338 8.84938 135.843 7.25569 133.415 6.63107C132.159 1.55025 128.108 -0.610826 121.263 0.147853C110.995 1.28587 104.728 5.55006 107.434 14.9331C109.922 14.9331 112.925 14.0334 117.078 15.5749C118.396 16.064 119.339 17.5808 119.906 20.1253H121.783C123.604 17.1057 125.4 15.9961 127.17 16.7964C128.941 17.5968 129.343 19.5409 128.378 22.6286L129.302 29.7197H131.299Z"
+                    fill="#191847" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M178.418 131.567H104.612C98.9407 131.567 94.3433 136.165 94.3433 141.836V200.881C94.3433 206.552 98.9407 211.149 104.612 211.149H178.418C184.089 211.149 188.687 206.552 188.687 200.881V141.836C188.687 136.165 184.089 131.567 178.418 131.567ZM168.149 149.537C169.567 149.537 170.716 150.687 170.716 152.105V190.612C170.716 192.03 169.567 193.179 168.149 193.179H114.881C113.463 193.179 112.313 192.03 112.313 190.612V152.105C112.313 150.687 113.463 149.537 114.881 149.537H168.149Z"
+                    fill="#C5CFD6" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.704 207.94C43.3574 192.489 51.9191 181.034 56.3889 173.575C64.0423 160.804 70.3062 149.44 72.283 145.099C76.9968 134.747 61.431 129.9 57.9082 134.729C52.5761 142.036 41.1888 165.032 23.7463 203.716L30.704 207.94Z"
+                    fill="#B28B67" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M56.6333 203.448L80.1821 144.17C85.2187 133.364 60.8959 126.261 57.1944 131.29C48.7907 142.707 28.8172 187.746 26.3135 191.147L56.6333 203.448Z"
+                    fill="#2F3676" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M119.342 190.932C114.909 184.298 98.7025 162.023 89.7436 152.88C87.1691 150.252 84.6552 147.732 82.276 145.385C75.2039 138.407 59.9528 151.022 67.0396 157.356C84.6885 173.131 110.518 194.361 112.671 196.258C115.688 198.918 122.128 195.101 119.342 190.932Z"
+                    fill="#915B3C" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M119.03 188.232C120.471 189.344 121.39 190.27 121.787 191.012C122.268 191.913 122.799 193.331 123.378 195.266C122.175 195.979 111.367 202.386 90.9515 214.487C88.8139 212.564 88.6012 210.967 90.3134 209.698C92.0257 208.429 93.4406 207.36 94.5583 206.493L106.507 191.716C106.736 191.432 107.137 191.343 107.401 191.519C107.406 191.522 107.41 191.525 107.414 191.528L109.476 192.998C111.521 192.683 113.069 192.215 114.12 191.592C114.973 191.086 115.992 190.087 117.176 188.596C117.63 188.023 118.43 187.839 118.963 188.184C118.986 188.199 119.009 188.215 119.03 188.232Z"
+                    fill="#E4E4E4" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M36.1469 205.631C36.8649 207.548 37.2239 208.982 37.2239 209.934C37.2239 211.091 37.0311 212.78 36.6455 215C35.3029 215 23.2368 215 0.447289 215C-0.493374 211.89 0.049633 210.211 2.0763 209.964C4.10297 209.716 5.78657 209.492 7.12708 209.292L23.9516 201.791C24.2754 201.647 24.6548 201.792 24.7991 202.116C24.8016 202.122 24.804 202.127 24.8063 202.133L25.8878 204.756C27.764 205.632 29.2885 206.069 30.4615 206.069C31.4146 206.069 32.7307 205.684 34.41 204.915C35.0544 204.619 35.8163 204.902 36.1117 205.547C36.1244 205.574 36.1361 205.603 36.1469 205.631Z"
+                    fill="#E4E4E4" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M88.6557 147.131C108.228 143.942 121.338 141.762 127.986 140.59C146.933 137.249 152.459 127.052 149.192 104.806H114.281C109.661 106.14 90.3575 114.391 56.3701 129.559C50.2551 132.595 51.3939 141.545 52.5116 144.494C52.5572 144.614 62.8659 162.279 83.4378 197.487L111.996 179.294L88.602 149.274C87.9842 148.03 88.0021 147.315 88.6557 147.131Z"
+                    fill="#5C63AB" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M86.1404 96.4044L65.6684 111.437C60.116 112.936 55.4771 114.8 51.7518 117.03C50.8718 117.832 49.8082 119.455 53.4577 119.175C57.1073 118.894 60.9586 118.763 61.4622 120.008C61.9657 121.253 59.7573 122.741 60.7752 124.421C61.4538 125.541 64.6598 122.733 70.3933 115.998L90.666 107.591L86.1404 96.4044ZM164.743 96.9232L151.331 96.976C159.612 123.709 164.083 137.893 164.743 139.529C166.228 143.209 163.085 148.815 161.741 151.827C166.118 153.785 165.652 146.532 171.173 149.101C176.213 151.445 180.047 155.694 185.87 152.101C186.586 151.659 187.37 149.996 185.475 148.696C180.753 145.458 173.948 139.792 173.028 137.926C171.774 135.383 169.013 121.715 164.743 96.9232Z"
+                    fill="#915B3C" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M126.629 40.646L121.079 39.6941C100.488 57.4816 92.0308 91.6535 66.7915 109.756L72.8664 117.286C116.652 111.865 127.504 70.183 126.629 40.646Z"
+                    fill="#E87613" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M150.821 110.388C128.569 110.388 112.201 110.388 101.717 110.388C99.4727 110.388 99.8955 107.148 100.22 105.513C103.963 86.6442 118.577 66.3044 118.577 39.4449L132.741 37.2239C144.456 56.0658 148.507 79.2641 150.821 110.388Z"
+                    fill="#DDE3E9" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M150.426 55.7447C152.483 55.1533 154.112 53.7742 155.313 51.6072C160.49 42.2659 158.621 37.1227 153.088 35.4322C147.556 33.7416 142.622 37.2239 133.807 37.2239C133.328 37.2239 132.888 37.2539 132.49 37.3141L128.056 37.5671C115.334 80.6829 111.825 109.449 117.53 123.866H156.179C158.469 129.205 160.66 133.698 162.752 137.343H173.284C174.275 105.297 166.656 78.0973 150.426 55.7447Z"
+                    fill="#FF9B21" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M147.763 101.722C146.547 111.892 144.571 119.274 141.836 123.866H156.179C153.508 117.637 150.702 110.256 147.763 101.722Z"
+                    fill="black" fill-opacity="0.1" />
+            </svg>
+        </section>
+        <section class="mt-5 py-4 gallery">
+            <div class="bg-white-100 img1">IMG1</div>
+            <div class="bg-green-100 img2">IMG2</div>
+            <div class="bg-green-200 img3">IMG3</div>
+            <div class="bg-blue img4">IMG4</div>
+            <div class="bg-black img5">IMG5</div>
+            <div class="bg-grey img6">IMG6</div>
+            <!--
+                <div class="bg-green-300 img7">IMG7</div>
+                <div class="bg-white-100">IMG7</div>
+            -->
+        </section>
+        <section class="mt-5 p-5 flex justify-center">
+            <a class="bg-green-100 p-4 rounded-lg font-title font-semibold shadow-2xl"
+                href="mailto:dg@rennueva.com">Solicita tu cotización</a>
+        </section>
     </main>
-    
+    <footer class="bg-blue pt-5">
+        <div class="flex flex-col justify-center p-4 justify-items-center gap-2">
+            <img src="./img/RennuevaLogoSmall.png" alt="Logo rennueva" class="w-8 mx-auto">
+            <div>
+                <h3 class="font-title font-600 text-base text-white-200 text-center mb-1">Acerca de Rennueva</h3>
+                <p class="font-body font-400 text-xs text-white-200 text-center">Somos una empresa dedicada a la
+                    implementación de sistemas de Economía Circular.</p>
+            </div>
+            <div class="px-4 flex justify-around">
+                <a href="https://es-la.facebook.com/rennuevamx/" target="_blank" rel="noopener" class="w-6 h-6 bg-white-200 p-2 block box-border rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 33" class="w-full h-full">
+                        <path
+                            d="M16.0012 3.2373C8.63852 3.2373 2.66919 9.20664 2.66919 16.5693C2.66919 23.2226 7.54386 28.7373 13.9185 29.7413V20.424H10.5319V16.5693H13.9185V13.632C13.9185 10.288 15.9092 8.44397 18.9532 8.44397C20.4119 8.44397 21.9399 8.70397 21.9399 8.70397V11.9826H20.2545C18.6012 11.9826 18.0839 13.012 18.0839 14.0666V16.5666H21.7785L21.1879 20.4213H18.0839V29.7386C24.4585 28.74 29.3332 23.224 29.3332 16.5693C29.3332 9.20664 23.3639 3.2373 16.0012 3.2373Z"
+                            fill="#3B5998" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/rennuevamx/" target="_blank" rel="noopener" class="w-6 h-6 bg-white-200 p-2 block box-border rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 32 33" fill="none">
+                        <path
+                            d="M25.8546 9.8212C24.5254 9.52893 23.3231 8.82312 22.42 7.80506C21.5169 6.787 20.9596 5.50903 20.8279 4.15454V3.56787H16.2279V21.7945C16.2288 22.6033 15.9753 23.3918 15.5032 24.0485C15.031 24.7051 14.3643 25.1965 13.5973 25.4532C12.8304 25.7098 12.0021 25.7186 11.2299 25.4784C10.4576 25.2381 9.78056 24.761 9.29457 24.1145C8.85917 23.5423 8.59255 22.8597 8.52487 22.1439C8.4572 21.428 8.59116 20.7075 8.91161 20.0639C9.23206 19.4202 9.72621 18.879 10.3382 18.5015C10.9502 18.1241 11.6555 17.9254 12.3746 17.9279C12.7722 17.9256 13.1679 17.984 13.5479 18.1012V13.4345C13.1057 13.3798 12.66 13.3575 12.2146 13.3679C10.5736 13.4117 8.98113 13.9331 7.63201 14.8682C6.2829 15.8033 5.23576 17.1116 4.6188 18.6327C4.00185 20.1539 3.84187 21.8219 4.15846 23.4326C4.47504 25.0433 5.25445 26.5267 6.40124 27.7012C7.57655 28.8961 9.08056 29.7147 10.7222 30.0529C12.3638 30.3911 14.0689 30.2337 15.6208 29.6007C17.1727 28.9676 18.5014 27.8875 19.4381 26.4975C20.3747 25.1076 20.8771 23.4706 20.8812 21.7945V12.4612C22.7365 13.7865 24.9613 14.4954 27.2412 14.4879V9.95454C26.7934 9.95638 26.3465 9.9117 25.9079 9.8212H25.8546Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@rennuevamx" target="_blank" rel="noopener" class="w-6 h-6 bg-white-200 p-2 block box-border rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 32 31" fill="none">
+                        <path
+                            d="M27.9293 10.9489C27.9159 10.0022 27.7268 9.06491 27.3706 8.17895C27.0618 7.43164 26.59 6.75294 25.9855 6.18623C25.381 5.61952 24.6571 5.17726 23.86 4.8877C22.9271 4.55939 21.9415 4.38187 20.9453 4.3627C19.6626 4.30895 19.256 4.29395 16 4.29395C12.744 4.29395 12.3266 4.29395 11.0533 4.3627C10.0575 4.38201 9.07243 4.55953 8.13997 4.8877C7.34272 5.17706 6.61867 5.61925 6.01415 6.18599C5.40963 6.75272 4.93796 7.43152 4.6293 8.17895C4.27841 9.05286 4.08947 9.97658 4.07064 10.9102C4.01331 12.1139 3.99597 12.4952 3.99597 15.5477C3.99597 18.6002 3.99597 18.9902 4.07064 20.1852C4.09064 21.1202 4.27864 22.0427 4.6293 22.9189C4.93848 23.6661 5.4105 24.3447 6.01522 24.9112C6.61994 25.4777 7.34406 25.9197 8.1413 26.2089C9.07122 26.5504 10.0565 26.7407 11.0546 26.7714C12.3386 26.8252 12.7453 26.8414 16.0013 26.8414C19.2573 26.8414 19.6746 26.8414 20.948 26.7714C21.9442 26.7531 22.9298 26.5759 23.8626 26.2477C24.6596 25.9578 25.3833 25.5154 25.9878 24.9487C26.5922 24.3821 27.0641 23.7036 27.3733 22.9564C27.724 22.0814 27.912 21.1589 27.932 20.2227C27.9893 19.0202 28.0066 18.6389 28.0066 15.5852C28.004 12.5327 28.004 12.1452 27.9293 10.9489ZM15.992 21.3202C12.5866 21.3202 9.82797 18.7339 9.82797 15.5414C9.82797 12.3489 12.5866 9.7627 15.992 9.7627C17.6268 9.7627 19.1946 10.3715 20.3506 11.4553C21.5065 12.539 22.156 14.0088 22.156 15.5414C22.156 17.0741 21.5065 18.5439 20.3506 19.6276C19.1946 20.7114 17.6268 21.3202 15.992 21.3202ZM22.4013 10.8964C22.2125 10.8966 22.0255 10.8619 21.8511 10.7942C21.6766 10.7265 21.5181 10.6273 21.3846 10.5021C21.2511 10.377 21.1452 10.2284 21.073 10.0648C21.0009 9.90125 20.9638 9.72595 20.964 9.54895C20.964 9.37207 21.0011 9.19693 21.0733 9.03352C21.1455 8.87011 21.2514 8.72163 21.3848 8.59656C21.5182 8.47149 21.6765 8.37228 21.8508 8.30459C22.0252 8.23691 22.212 8.20207 22.4006 8.20207C22.5893 8.20207 22.7761 8.23691 22.9504 8.30459C23.1247 8.37228 23.2831 8.47149 23.4165 8.59656C23.5499 8.72163 23.6557 8.87011 23.7279 9.03352C23.8001 9.19693 23.8373 9.37207 23.8373 9.54895C23.8373 10.2939 23.1946 10.8964 22.4013 10.8964Z"
+                            fill="url(#paint0_linear_38_43)" />
+                        <path
+                            d="M15.992 19.2953C18.2034 19.2953 19.996 17.6147 19.996 15.5416C19.996 13.4685 18.2034 11.7878 15.992 11.7878C13.7807 11.7878 11.988 13.4685 11.988 15.5416C11.988 17.6147 13.7807 19.2953 15.992 19.2953Z"
+                            fill="url(#paint1_linear_38_43)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_38_43" x1="16.0013" y1="4.29395" x2="16.5" y2="27.5677"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FEDA75" />
+                                <stop offset="0.0001" stop-color="#FEDA75" stop-opacity="0.76" />
+                                <stop offset="0.28125" stop-color="#FA7E1E" stop-opacity="0.82" />
+                                <stop offset="0.526042" stop-color="#D62976" stop-opacity="0.83" />
+                                <stop offset="0.744792" stop-color="#962FBF" stop-opacity="0.78" />
+                                <stop offset="1" stop-color="#4F5BD5" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_38_43" x1="15.992" y1="11.7878" x2="16.1578" y2="19.5372"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FEDA75" />
+                                <stop offset="0.0001" stop-color="#FEDA75" stop-opacity="0.76" />
+                                <stop offset="0.28125" stop-color="#FA7E1E" stop-opacity="0.82" />
+                                <stop offset="0.526042" stop-color="#D62976" stop-opacity="0.83" />
+                                <stop offset="0.744792" stop-color="#962FBF" stop-opacity="0.78" />
+                                <stop offset="1" stop-color="#4F5BD5" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="py-4 px-5 flex flex-wrap gap-4 sm:justify-between">
+
+            <div class="flex justify-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="none" class="w-5">
+                    <path
+                        d="M10.0928 0.5C4.57877 0.5 0.0927734 4.986 0.0927734 10.5C0.0927734 16.014 4.57877 20.5 10.0928 20.5C15.6068 20.5 20.0928 16.014 20.0928 10.5C20.0928 4.986 15.6068 0.5 10.0928 0.5ZM15.8428 11.5H9.09277V4.5H11.0928V9.5H15.8428V11.5Z"
+                        fill="#F5F5F5" />
+                </svg>
+                <div class="shrink-0 flex flex-col justify-center content-center justify-items-center">
+                    <h4 class="text-xs font-title font-semibold text-white-200">Horario de atención</h4>
+                    <p class="text-xs font-body font-normal text-white-200">Lun - Vie 9 a.m. - 6 p.m.</p>
+                    <p class="text-xs font-body font-normal text-white-200">Sábado: 9 a.m. - 1 p.m.</p>
+                </div>
+            </div>
+
+
+            <div class="flex justify-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19" fill="none" class="w-5">
+                    <path
+                        d="M17.58 14.5475L13.515 10.8515C13.3228 10.6768 13.0703 10.5837 12.8108 10.5917C12.5513 10.5997 12.305 10.7083 12.124 10.8945L9.73099 13.3555C9.15499 13.2455 7.99699 12.8845 6.80499 11.6955C5.61299 10.5025 5.25199 9.34147 5.14499 8.76947L7.60399 6.37547C7.79041 6.19459 7.89913 5.94829 7.90716 5.68867C7.91518 5.42906 7.82188 5.17651 7.64699 4.98447L3.95199 0.920466C3.77704 0.727822 3.53387 0.61097 3.27415 0.594725C3.01442 0.578481 2.75859 0.664124 2.56099 0.833466L0.390995 2.69447C0.218106 2.86798 0.114914 3.09892 0.100994 3.34347C0.0859944 3.59347 -0.200006 9.51547 4.39199 14.1095C8.39799 18.1145 13.416 18.4075 14.798 18.4075C15 18.4075 15.124 18.4015 15.157 18.3995C15.4015 18.3858 15.6323 18.2821 15.805 18.1085L17.665 15.9375C17.835 15.7405 17.9213 15.4849 17.9054 15.2252C17.8895 14.9655 17.7727 14.7222 17.58 14.5475Z"
+                        fill="#F5F5F5" />
+                </svg>
+                <div class="shrink-0 flex flex-col justify-center content-center justify-items-center">
+                    <h4 class="text-xs font-title font-semibold text-white-200">Teléfono</h4>
+                    <p class="text-xs font-body font-normal text-white-200">5584377300</p>
+                </div>
+            </div>
+
+
+            <div class="flex justify-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" fill="none" class="w-5">
+                    <path
+                        d="M8.49996 20.5C8.49996 20.5 16.529 14.94 16.5 8.5C16.5 4.089 12.911 0.5 8.49996 0.5C4.08896 0.5 0.499959 4.089 0.499959 8.495C0.470959 14.94 8.19596 20.284 8.49996 20.5ZM4.49996 7.5H7.49996V4.5H9.49996V7.5H12.5V9.5H9.49996V12.5H7.49996V9.5H4.49996V7.5Z"
+                        fill="#F5F5F5" />
+                </svg>
+                <div class="shrink-0 flex flex-col justify-center content-center justify-items-center">
+                    <h4 class="text-xs font-title font-semibold text-white-200">Dirección</h4>
+                    <address class="text-xs font-body font-normal text-white-200">C. Mimosas 49Bis<br/> Col. Santa MaríaInsurgentes, Cuahutemoc<br/> CDMX, C.P. 06430</address>
+                </div>
+            </div>
+        </div>
+        <div class="px-4  py-5 flex justify-evenly">
+            <div class="text-center">
+                <h5 class="text-xs font-title font-semibold text-white-200">Ayuda</h5>
+                <nav>
+                    <ul>
+                        <li><a href="https://rennueva.com/rennueva/contacto/" target="_blank" rel="noopener" class="text-xs font-body font-normal text-white-200 underline">Preguntas frecuentes</a></li>
+                        <li><a href="https://web.whatsapp.com/send?phone=525586129018&text=%C2%A1Hola%21%20Me%20interesa%20conocer%20m%C3%A1s%20acerca%20de%20Rennueva." target="_blank" rel="noopener" class="text-xs font-body font-normal text-white-200 underline">Soporte</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="text-center">
+                <h5 class="text-xs font-title font-semibold text-white-200">Legal</h5>
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener" class="text-xs font-body font-normal text-white-200 underline">Aviso de privacidad</a></li>
+                        <li><a href="#" target="_blank" rel="noopener" class="text-xs font-body font-normal text-white-200 underline">Términos y condiciones</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="px-4 py-5">
+            <p class="text-xs font-body font-normal text-white-100 text-center">© 2023 Rennueva. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
