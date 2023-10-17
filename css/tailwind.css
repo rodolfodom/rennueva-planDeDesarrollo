@@ -15,11 +15,20 @@
         display: grid;
         gap: 0.5rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: repeat(3, 300px);
         grid-template-areas: 
             "img1 img1 img2 img2"
             "img1 img1 img3 img3"
             "img4 img4 img4 img4";
+        
+        @media screen and (min-width: 680px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 400px);
+            grid-template-areas: 
+            "img1 img1 img2 img2"
+            "img1 img1 img3 img3"
+            "img4 img4 img4 img4";
+        }
     }
 
     .img1 {
@@ -38,17 +47,6 @@
         grid-area: img4;
     }
 
-    .img5 {
-        grid-area: img5;
-    }
-
-    .img6 {
-        grid-area: img6;
-    }
-
-    .img7 {
-        grid-area: img7;
-    }
 }
 
 @layer socialMediaMenu{

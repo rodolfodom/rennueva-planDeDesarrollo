@@ -773,11 +773,6 @@ video {
   background-color: rgb(162 204 7 / var(--tw-bg-opacity));
 }
 
-.bg-green-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(144 201 42 / var(--tw-bg-opacity));
-}
-
 .bg-green-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(35 147 38 / var(--tw-bg-opacity));
@@ -803,8 +798,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/img\/img1\.jpeg\'\)\] {
-  background-image: url('./img/img1.jpeg');
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .fill-white-200 {
@@ -964,11 +963,21 @@ video {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, 300px);
     grid-template-areas: 
             "img1 img1 img2 img2"
             "img1 img1 img3 img3"
             "img4 img4 img4 img4";
+    @media screen and (min-width: 680px) {
+      grid-template-columns: repeat(4, 1fr);
+
+      grid-template-rows: repeat(3, 400px);
+
+      grid-template-areas: 
+            "img1 img1 img2 img2"
+            "img1 img1 img3 img3"
+            "img4 img4 img4 img4";
+    }
   }
 
   .img1 {
@@ -985,18 +994,6 @@ video {
 
   .img4 {
     grid-area: img4;
-  }
-
-  .img5 {
-    grid-area: img5;
-  }
-
-  .img6 {
-    grid-area: img6;
-  }
-
-  .img7 {
-    grid-area: img7;
   }
 }
 
